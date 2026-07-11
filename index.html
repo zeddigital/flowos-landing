@@ -1300,8 +1300,10 @@
         min-width: 100px;
       }
       .hero-stat-num { font-size: 20px; }
-      .mockup-wrap { display: none; }
+      .mockup-wrap { display: block; margin-top: 8px; }
       .float-card { display: none; }
+      .mockup-body { height: 260px; }
+      .mock-sidebar { display: none; }
 
       /* ── Trusted by ── */
       .trusted-section { padding: 28px 20px; }
@@ -1411,7 +1413,10 @@
       nav { padding: 0 28px; }
       .hero { padding: 72px 28px 64px; }
       .hero h1 { font-size: 44px; }
-      .hero-inner { gap: 40px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 36px; }
+      .float-card { display: none; }
+      .mockup-body { height: 320px; }
+      .mock-sidebar { width: 120px; }
       section { padding: 72px 28px; }
       .features-grid { grid-template-columns: repeat(2, 1fr); }
       .showcase-body { grid-template-columns: 180px 1fr; }
