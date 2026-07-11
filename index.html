@@ -1217,7 +1217,7 @@
     }
 
     .footer-brand-desc {
-      font-size: 13.5px; color: #334155;
+      font-size: 13.5px; color: #94a3b8;
       line-height: 1.7;
       margin-top: 14px;
       max-width: 300px;
@@ -1225,7 +1225,7 @@
 
     .footer-col-title {
       font-size: 11px; font-weight: 700;
-      color: #475569;
+      color: #64748b;
       text-transform: uppercase;
       letter-spacing: 0.9px;
       margin-bottom: 18px;
@@ -1234,11 +1234,11 @@
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 11px; }
 
     .footer-links a {
-      font-size: 13.5px; color: #334155;
+      font-size: 13.5px; color: #94a3b8;
       text-decoration: none;
       transition: color 0.15s;
     }
-    .footer-links a:hover { color: #64748b; }
+    .footer-links a:hover { color: #e2e8f0; }
 
     .footer-bottom {
       border-top: 1px solid rgba(255,255,255,0.05);
@@ -1246,11 +1246,11 @@
       display: flex; align-items: center; justify-content: space-between;
     }
 
-    .footer-copy { font-size: 12.5px; color: #1e293b; }
+    .footer-copy { font-size: 12.5px; color: #94a3b8; }
 
     .footer-badge {
       display: flex; align-items: center; gap: 6px;
-      font-size: 11px; color: #1e293b;
+      font-size: 11px; color: #94a3b8;
     }
 
     .footer-badge-dot {
@@ -1267,6 +1267,165 @@
     .teal-txt  { color: var(--teal-light); }
     .red-txt   { color: #f87171; }
     .muted-txt { color: #475569; }
+  
+    /* ======================== MOBILE RESPONSIVENESS ======================== */
+    @media (max-width: 768px) {
+
+      /* ── Nav ── */
+      nav {
+        padding: 0 20px;
+        gap: 0;
+        height: 58px;
+      }
+      .nav-links { display: none; }
+      .nav-right { gap: 8px; }
+      .btn { font-size: 13px; padding: 8px 14px; }
+      .btn-lg { font-size: 15px; padding: 13px 24px; }
+
+      /* ── Hero ── */
+      .hero { padding: 52px 20px 48px; }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .hero h1 { font-size: 36px; letter-spacing: -1px; }
+      .hero-sub { font-size: 15px; }
+      .hero-ctas { flex-direction: column; align-items: stretch; gap: 10px; }
+      .hero-ctas .btn { text-align: center; justify-content: center; }
+      .hero-stats { flex-wrap: wrap; gap: 20px; }
+      .hero-stat {
+        border: none;
+        padding: 0;
+        margin: 0;
+        min-width: 100px;
+      }
+      .hero-stat-num { font-size: 20px; }
+      .mockup-wrap { display: none; }
+      .float-card { display: none; }
+
+      /* ── Trusted by ── */
+      .trusted-section { padding: 28px 20px; }
+      .trusted-item {
+        padding: 8px 14px;
+        border-right: none;
+        border-bottom: 1px solid var(--gray-200);
+      }
+      .trusted-item:last-child { border-bottom: none; }
+      .trusted-row { flex-direction: column; align-items: flex-start; }
+
+      /* ── Sections generic ── */
+      section { padding: 56px 20px; }
+      .section-title { font-size: 28px; letter-spacing: -0.5px; }
+      .section-sub { font-size: 15px; }
+
+      /* ── Features ── */
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 32px;
+      }
+      .feat-card { padding: 22px 20px; }
+
+      /* ── Showcase ── */
+      .showcase-wrap { border-radius: 14px; }
+      .showcase-body {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .sc-sidebar { display: none; }
+      .sc-main { padding: 16px; }
+      .sc-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .sc-panels { grid-template-columns: 1fr; }
+
+      /* ── Workflow ── */
+      .workflow-track {
+        flex-direction: column;
+        gap: 14px;
+      }
+      .wf-connector { display: none; }
+      .wf-step { padding: 22px 18px; text-align: left; display: flex; gap: 14px; align-items: flex-start; }
+      .wf-num { margin: 0; flex-shrink: 0; }
+      .wf-emoji { display: none; }
+      .wf-title { margin-bottom: 4px; }
+
+      /* ── Comparison ── */
+      .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .comp-card { padding: 24px 20px; }
+
+      /* ── Integrations ── */
+      .int-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 32px;
+      }
+
+      /* ── Testimonials ── */
+      .test-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .test-card { padding: 22px 20px; }
+
+      /* ── Pricing ── */
+      .price-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .price-card.featured { transform: none; }
+      .price-card { padding: 26px 22px; }
+      .price-amount { font-size: 38px; }
+
+      /* ── FAQ ── */
+      .faq-list { margin-top: 32px; }
+      .faq-q { font-size: 14.5px; }
+
+      /* ── Final CTA ── */
+      .cta-section { padding: 64px 20px; }
+      .cta-section h2 { font-size: 30px; letter-spacing: -0.5px; }
+      .cta-section p { font-size: 15px; }
+      .cta-btns { flex-direction: column; align-items: stretch; gap: 10px; }
+      .cta-btns .btn { text-align: center; justify-content: center; }
+
+      /* ── Footer ── */
+      footer { padding: 44px 20px 28px; }
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-bottom: 36px;
+      }
+      .footer-brand-desc { max-width: 100%; }
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      nav { padding: 0 28px; }
+      .hero { padding: 72px 28px 64px; }
+      .hero h1 { font-size: 44px; }
+      .hero-inner { gap: 40px; }
+      section { padding: 72px 28px; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .showcase-body { grid-template-columns: 180px 1fr; }
+      .sc-stats { grid-template-columns: repeat(2, 1fr); }
+      .test-grid { grid-template-columns: 1fr 1fr; }
+      .int-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1.5fr 1fr 1fr; gap: 28px; }
+      footer { padding: 48px 28px 28px; }
+      .trusted-section { padding: 32px 28px; }
+      .comparison-grid { gap: 16px; }
+      .workflow-track { gap: 6px; }
+      .wf-step { padding: 20px 14px; }
+    }
+
   </style>
 </head>
 <body>
